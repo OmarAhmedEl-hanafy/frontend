@@ -1,0 +1,12 @@
+.row{
+  padding-top: 150px;
+}
+.Movies {
+margin: 20px;
+  }
+  .Movies span {
+    width: 2rem;
+    padding: 0 20px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+  }

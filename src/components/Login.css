@@ -1,0 +1,84 @@
+:root {
+    --main-font: 'Dosis', sans-serif;
+    --light-bg: #0a2647;
+    --main-color: #E94560;
+    --font-color: #fff;
+    --transition: .7s;
+    --border: 2px solid rgb(51, 51, 51);
+}
+
+.contain img {
+    width: 46px;
+    height: 46px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+}
+
+.contain {
+    background-color: var(--light-bg);
+    width: 650px;
+    flex-direction: column;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contain .form-input {
+    width: 100%;
+    padding: 7px;
+    margin: 10px 0;
+    border-radius: 7px;
+
+}
+
+.contain .form-class {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.login .login-btn {
+    margin: 0;
+    background-color: var(--main-color) !important;
+    color: var(--font-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.login>button:hover {
+    transition: var(--transition);
+    background-color: #e945606e;
+}
+
+.login a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .contain {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contain {
+        width: 400px;
+    }
+}

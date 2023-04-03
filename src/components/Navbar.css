@@ -1,0 +1,42 @@
+
+.navbar {
+    position: fixed;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--light-bg);
+      width: 70%;
+      margin: auto;
+      border-radius: 6px;
+      z-index: 10000;
+  }
+  
+  .navbar a{
+    transition: var(--transition);
+    font-weight: bold;
+  }
+  
+  .navbar a:hover{
+    transform: translateY(-5px);
+  }
+  
+  .navbar span ,
+  .navbar i,
+  .navbar button,.btn-usr {
+    color: var(--font-color);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .navbar span:hover ,
+  .navbar i:hover ,
+  .navbar button:hover,
+  .btn-usr:hover {
+    transform: translateY(-5px);
+    color: var(--main-color);
+  }
+  
+  .navbar a:hover,
+  .navbar .active{
+    color: var(--main-color) !important;
+  }

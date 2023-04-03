@@ -1,0 +1,138 @@
+/* .createpost {
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 50%;
+    margin-top: 10px;
+  }
+  .createpost > .bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: var(--light-bg);
+  }
+  .createpost > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  .pro-img {
+    padding-left: 10px;
+  }
+  .createpost > .pro-img > img {
+    width: 50px;
+  }
+  .createpost > .Form > .input > input,
+  textarea {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  .createpost > .Form > button {
+    padding: 10px;
+    color: white;
+  } */
+
+  
+  .createpost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+  /* .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    opacity: 0.5;
+    z-index: -1;
+  }
+   */
+  .pro-img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .bg-post {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #000000; */
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  .pro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;  
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    resize: vertical;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0062cc;
+  }
+  

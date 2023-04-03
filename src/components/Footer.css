@@ -1,0 +1,19 @@
+
+/* start footer  */
+.footer{
+    background-color: var(--light-bg) ;
+    z-index: 1000;
+}
+.footer .container .row{
+  padding-top: 50px;
+}
+.footer span {
+    color: var(--main-color);
+  }
+  .footer-social a {
+    transition: .7s;
+  }
+  
+  .footer-social a:hover {
+    color: var(--main-color);
+  }

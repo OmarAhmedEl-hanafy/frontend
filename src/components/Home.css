@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap');
+
+:root {
+    --main-font: 'Dosis', sans-serif;
+    --light-bg: #0a2647;
+    --main-color: #E94560;
+    --font-color: #fff;
+    --transition: .7s;
+    --border: 2px solid rgb(51, 51, 51);
+}
+
+
+
+::-webkit-scrollbar {
+    width: .5rem;
+    transition: width 2s;
+  }
+  
+  ::-webkit-scrollbar-track {
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--light-bg);
+    border-radius: 4px;
+  }
+  
+
+.isLoading{
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .isLoading > img{
+    width: 50px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin{
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+  .to-up {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: var(--light-bg);
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    transition: .7s;
+    animation:  upTo 1s infinite alternate;
+    display: none;
+  }
+  
+  .to-up:hover{
+    animation:forwards !important;
+    
+    }
+  span{
+    color: var(--main-color);
+  }
+
+  .home{
+    height: 100vh;
+    text-align: center;
+
+  }
+  .home .div_home{
+    width: 800px;
+  }
+  .home_contnet h1{
+    font-size: 70px;
+  }
+
+  .home .home_contnet p{
+    font-size: 17px;
+    font-weight: lighter;
+  }
+
+/* satart about  */
+
+.about .about-item{
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+     color: #000 !important;
+  }
+
+  .about .about-item::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: var(--transition);
+    z-index: -1;
+    transform: skewX(180deg);
+  }
+  .about .about-item:hover.about-item::after {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    left:0;
+    transform: skewX(0);
+  }
+  
+  .about .about-item:hover{
+    transform: translateY(-15px);
+    color: #fff !important;
+  }
+
+  
+/* start reviews  */
+
+
+  
+  .review-item {
+    width: 8rem;
+    height: 8rem;
+    padding-top: 1rem;
+    margin: auto;
+    position: relative;
+
+  }
+  
+  .review-item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border:1px solid var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: var(--transition);
+    box-shadow: 1px 1px 10px var(--main-color);
+  }
+  .review-item:hover.review-item::after{
+    transform:  rotate(60deg);
+    border-radius: 50%;
+  }
+  
+  #review-random{
+    color: var(--main-color);
+  }
+  /* start category  */
+  .category {
+    background: var(--light-bg);
+    color: var(--font-color);
+  }
+  
+  .category h3 {
+    position: relative;
+    font-size: 2rem;
+  }
+  
+  
+  .category h3::after {
+    content: '';
+    width: 100%;
+    height: .1rem;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -.6rem;
+    left: 0;
+  
+  }
+  
+  /* Start Movies  */
+  .Movies {
+    background-color: var(--light-bg);
+  }
+  .Movies span {
+    width: 2rem;
+    padding: 0 20px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+  }
+  
+  
